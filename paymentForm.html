@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            background-color: #f2f2f2;
+            border: 2px solid black;
+            padding: 5px 20px 15px 20px;
+            margin: 2px;
+            border-radius: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea,
+        fieldset {
+
+            border-radius: 4px;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 4px;
+        }
+
+        body {
+            margin: 15px 40px;
+            font-size: 17px;
+            padding: 8px;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(48, 189, 130);
+            color: aliceblue;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            width: 100%;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4caf84;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="">
+
+            <h1 style="text-align: center;">Payment Form</h1>
+            <hr>
+            <h2>Contact Information</h2>
+
+            <p>Name:* <input type="text" name="name" placeholder="Ritik sharma" required> </p>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male: <input type="radio" name="gender" id="male">
+                    Female: <input type="radio" name="gender" id="female">
+                </p>
+            </fieldset>
+
+            <p>Address: <textarea name="address" id="address" cols="80" rows="7"
+                    placeholder="Enter your Address"></textarea></p>
+            <p>Email:* <input type="email" name="email" id="email" placeholder="ritiksharmas1607@gmail.com" required>
+            </p>
+            <p>Pincode:* <input type="number" name="pincode" id="pincode" placeholder="121004" required></p>
+
+            <hr>
+
+            <h2>Payment Information</h2>
+            <p>Card Types:*
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select a Card Type--</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="indusland">Indusland</option>
+                </select>
+
+            </p>
+
+            <p> CardNumber:* <input type="number" name="Card_Number" id="Card_Number" required placeholder="6784928423">
+
+            </p>
+
+            <p>Expiration Date:* <input type="date" name="exp_date" id="exp_date" required>
+
+            </p>
+
+            <p>CVV:* <input type="password" name="" id="" required placeholder="ENTER YOUR CVV">
+
+            </p>
+
+            <input type="submit" value="Pay Now">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
